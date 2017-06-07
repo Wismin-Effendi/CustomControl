@@ -2,6 +2,14 @@
 //  ViewController.swift
 //  Custom Control - Reusable Slider
 //
+//  Updated and improved from https://www.raywenderlich.com/76433/how-to-make-a-custom-control-swift
+//  
+//  ** We follow along the tutorial (originally written in Swift 2.0, iOS 6)
+//
+//  ** Modification were made to make the code run on iOS10, Swift 3.1
+//  ** We also add improvement to make RangeSlider @IBInspectable, and the thumb now use custom image
+//  **  instead of just simple circle / rectangle.
+//
 //  Created by Wismin Effendi on 6/7/17.
 //  Copyright © 2017 iShinobi. All rights reserved.
 //
@@ -14,7 +22,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        rangeSlider.translatesAutoresizingMaskIntoConstraints = false 
         rangeSlider.addTarget(self, action: #selector(rangeSliderValueChanged(_:)), for: .valueChanged)
         
     }
