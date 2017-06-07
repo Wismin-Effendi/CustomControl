@@ -18,6 +18,11 @@ class ViewController: UIViewController {
         view.addSubview(rangeSlider)
         
         rangeSlider.addTarget(self, action: #selector(rangeSliderValueChanged(_:)), for: .valueChanged)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.rangeSlider.trackHighlightTinColor = .red
+            self.rangeSlider.curvaceousness = 0.0
+        }
     }
     
     override func viewDidLayoutSubviews() {
