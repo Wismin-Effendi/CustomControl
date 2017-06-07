@@ -9,39 +9,45 @@
 import UIKit
 import QuartzCore
 
+@IBDesignable
 class RangeSlider: UIControl {
 
+    @IBInspectable
     var minimumValue: Double = 0.0 {
         didSet {
             updateLayerFrames()
         }
     }
     
+    @IBInspectable
     var maximumValue: Double = 1.0 {
         didSet {
             updateLayerFrames()
         }
     }
     
+    @IBInspectable
     var lowerValue: Double = 0.2 {
         didSet {
             updateLayerFrames()
         }
     }
     
+    @IBInspectable
     var upperValue: Double = 0.8 {
         didSet {
             updateLayerFrames()
         }
     }
     
-    
+    @IBInspectable
     var trackTintColor: UIColor = UIColor(white: 0.9, alpha: 1.0) {
         didSet {
             trackLayer.setNeedsDisplay()
         }
     }
     
+    @IBInspectable
     var trackHighlightTinColor: UIColor = UIColor(red: 0.0, green: 0.45, blue: 0.94, alpha: 1.0) {
         didSet {
             trackLayer.setNeedsDisplay()
@@ -63,6 +69,35 @@ class RangeSlider: UIControl {
         }
     }
     
+    @IBInspectable
+    var normalLowerThumbImg: UIImage? = UIImage(named: "exit-25.png") {
+        didSet {
+            lowerThumbLayer.setNeedsDisplay()
+        }
+    }
+    
+    @IBInspectable
+    var highlightLowerThumbImg: UIImage? = UIImage(named: "id-card-25.png") {
+        didSet {
+            lowerThumbLayer.setNeedsDisplay()
+        }
+    }
+    
+    @IBInspectable
+    var normalUpperThumbImg: UIImage? = UIImage(named: "microphone-25.png") {
+        didSet {
+            upperThumbLayer.setNeedsDisplay()
+        }
+    }
+    
+    @IBInspectable
+    var highlightUpperThumbImg: UIImage? = UIImage(named: "blueprint-25.png") {
+        didSet {
+            upperThumbLayer.setNeedsDisplay()
+        }
+    }
+    
+    
     let trackLayer = RangeSliderTrackLayer()
     let lowerThumbLayer = RangeSliderThumbLayer()
     let upperThumbLayer = RangeSliderThumbLayer()
@@ -79,27 +114,28 @@ class RangeSlider: UIControl {
         }
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override func awakeFromNib() {
+        super.awakeFromNib()
         
         trackLayer.rangeSlider = self
         trackLayer.contentsScale = UIScreen.main.scale
         layer.addSublayer(trackLayer)
         
         lowerThumbLayer.rangeSlider = self
+        lowerThumbLayer.normalThumbImage = normalLowerThumbImg
+        lowerThumbLayer.highlightThumbImage = highlightLowerThumbImg
         lowerThumbLayer.contentsScale = UIScreen.main.scale
         layer.addSublayer(lowerThumbLayer)
         
         upperThumbLayer.rangeSlider = self
+        upperThumbLayer.normalThumbImage = normalUpperThumbImg
+        upperThumbLayer.highlightThumbImage = highlightUpperThumbImg
         upperThumbLayer.contentsScale = UIScreen.main.scale
         layer.addSublayer(upperThumbLayer)
         
         updateLayerFrames()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
     
     func updateLayerFrames() {
         CATransaction.begin()

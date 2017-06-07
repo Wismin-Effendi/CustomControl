@@ -10,25 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let rangeSlider = RangeSlider(frame: CGRect.zero)
+    @IBOutlet weak var rangeSlider: RangeSlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.addSubview(rangeSlider)
-        
+        rangeSlider.translatesAutoresizingMaskIntoConstraints = false 
         rangeSlider.addTarget(self, action: #selector(rangeSliderValueChanged(_:)), for: .valueChanged)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.rangeSlider.trackHighlightTinColor = .red
-            self.rangeSlider.curvaceousness = 0.0
-        }
     }
     
     override func viewDidLayoutSubviews() {
         let margin: CGFloat = 20.0
         let width = view.bounds.width - 2.0 * margin
         rangeSlider.frame = CGRect(x: margin, y: margin + topLayoutGuide.length, width: width, height: 31.0)
+        
+        print(rangeSlider.upperValue)
     }
 
     func rangeSliderValueChanged(_ rangeSlider: RangeSlider) {

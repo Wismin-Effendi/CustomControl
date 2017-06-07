@@ -15,6 +15,18 @@
 		37F432201EE82D0100E6EBE0 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4321F1EE82D0100E6EBE0 /* RangeSlider.swift */; };
 		37F432221EE8354100E6EBE0 /* RangeSliderThumbLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F432211EE8354100E6EBE0 /* RangeSliderThumbLayer.swift */; };
 		37F432241EE83FF300E6EBE0 /* RangeSliderTrackLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F432231EE83FF300E6EBE0 /* RangeSliderTrackLayer.swift */; };
+		37F432271EE8A20B00E6EBE0 /* agenda-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F432261EE8A20B00E6EBE0 /* agenda-25.png */; };
+		37F432291EE8A21400E6EBE0 /* archieve-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F432281EE8A21400E6EBE0 /* archieve-25.png */; };
+		37F4322B1EE8A25200E6EBE0 /* bluetooth-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F4322A1EE8A25200E6EBE0 /* bluetooth-25.png */; };
+		37F4322D1EE8A28300E6EBE0 /* briefcase-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F4322C1EE8A28300E6EBE0 /* briefcase-25.png */; };
+		37F4322F1EE8A2BF00E6EBE0 /* command-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F4322E1EE8A2BF00E6EBE0 /* command-25.png */; };
+		37F432311EE8A2EC00E6EBE0 /* compass-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F432301EE8A2EC00E6EBE0 /* compass-25.png */; };
+		37F432331EE8A30A00E6EBE0 /* database-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F432321EE8A30A00E6EBE0 /* database-25.png */; };
+		37F432351EE8A34300E6EBE0 /* exit-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F432341EE8A34300E6EBE0 /* exit-25.png */; };
+		37F432371EE8A37C00E6EBE0 /* gift-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F432361EE8A37C00E6EBE0 /* gift-25.png */; };
+		37F432391EE8A3B200E6EBE0 /* id-card-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F432381EE8A3B200E6EBE0 /* id-card-25.png */; };
+		37F4323B1EE8A4FA00E6EBE0 /* microphone-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F4323A1EE8A4FA00E6EBE0 /* microphone-25.png */; };
+		37F4323D1EE8A55500E6EBE0 /* blueprint-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F4323C1EE8A55500E6EBE0 /* blueprint-25.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +40,18 @@
 		37F4321F1EE82D0100E6EBE0 /* RangeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
 		37F432211EE8354100E6EBE0 /* RangeSliderThumbLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSliderThumbLayer.swift; sourceTree = "<group>"; };
 		37F432231EE83FF300E6EBE0 /* RangeSliderTrackLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSliderTrackLayer.swift; sourceTree = "<group>"; };
+		37F432261EE8A20B00E6EBE0 /* agenda-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "agenda-25.png"; sourceTree = "<group>"; };
+		37F432281EE8A21400E6EBE0 /* archieve-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archieve-25.png"; sourceTree = "<group>"; };
+		37F4322A1EE8A25200E6EBE0 /* bluetooth-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bluetooth-25.png"; sourceTree = "<group>"; };
+		37F4322C1EE8A28300E6EBE0 /* briefcase-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "briefcase-25.png"; sourceTree = "<group>"; };
+		37F4322E1EE8A2BF00E6EBE0 /* command-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "command-25.png"; sourceTree = "<group>"; };
+		37F432301EE8A2EC00E6EBE0 /* compass-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass-25.png"; sourceTree = "<group>"; };
+		37F432321EE8A30A00E6EBE0 /* database-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "database-25.png"; sourceTree = "<group>"; };
+		37F432341EE8A34300E6EBE0 /* exit-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit-25.png"; sourceTree = "<group>"; };
+		37F432361EE8A37C00E6EBE0 /* gift-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gift-25.png"; sourceTree = "<group>"; };
+		37F432381EE8A3B200E6EBE0 /* id-card-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "id-card-25.png"; sourceTree = "<group>"; };
+		37F4323A1EE8A4FA00E6EBE0 /* microphone-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone-25.png"; sourceTree = "<group>"; };
+		37F4323C1EE8A55500E6EBE0 /* blueprint-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueprint-25.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +84,7 @@
 		37F4320C1EE82B9000E6EBE0 /* Custom Control - Reusable Slider */ = {
 			isa = PBXGroup;
 			children = (
+				37F432251EE8A1C400E6EBE0 /* images */,
 				37F4320D1EE82B9000E6EBE0 /* AppDelegate.swift */,
 				37F4320F1EE82B9000E6EBE0 /* ViewController.swift */,
 				37F4321F1EE82D0100E6EBE0 /* RangeSlider.swift */,
@@ -71,6 +96,25 @@
 				37F432191EE82B9000E6EBE0 /* Info.plist */,
 			);
 			path = "Custom Control - Reusable Slider";
+			sourceTree = "<group>";
+		};
+		37F432251EE8A1C400E6EBE0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				37F432341EE8A34300E6EBE0 /* exit-25.png */,
+				37F4323C1EE8A55500E6EBE0 /* blueprint-25.png */,
+				37F4323A1EE8A4FA00E6EBE0 /* microphone-25.png */,
+				37F432361EE8A37C00E6EBE0 /* gift-25.png */,
+				37F432321EE8A30A00E6EBE0 /* database-25.png */,
+				37F432381EE8A3B200E6EBE0 /* id-card-25.png */,
+				37F432301EE8A2EC00E6EBE0 /* compass-25.png */,
+				37F4322C1EE8A28300E6EBE0 /* briefcase-25.png */,
+				37F4322E1EE8A2BF00E6EBE0 /* command-25.png */,
+				37F4322A1EE8A25200E6EBE0 /* bluetooth-25.png */,
+				37F432281EE8A21400E6EBE0 /* archieve-25.png */,
+				37F432261EE8A20B00E6EBE0 /* agenda-25.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,9 +177,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F432291EE8A21400E6EBE0 /* archieve-25.png in Resources */,
+				37F4322D1EE8A28300E6EBE0 /* briefcase-25.png in Resources */,
+				37F432271EE8A20B00E6EBE0 /* agenda-25.png in Resources */,
+				37F432311EE8A2EC00E6EBE0 /* compass-25.png in Resources */,
+				37F432371EE8A37C00E6EBE0 /* gift-25.png in Resources */,
 				37F432181EE82B9000E6EBE0 /* LaunchScreen.storyboard in Resources */,
+				37F432331EE8A30A00E6EBE0 /* database-25.png in Resources */,
+				37F432351EE8A34300E6EBE0 /* exit-25.png in Resources */,
+				37F4322F1EE8A2BF00E6EBE0 /* command-25.png in Resources */,
+				37F4322B1EE8A25200E6EBE0 /* bluetooth-25.png in Resources */,
 				37F432151EE82B9000E6EBE0 /* Assets.xcassets in Resources */,
 				37F432131EE82B9000E6EBE0 /* Main.storyboard in Resources */,
+				37F4323D1EE8A55500E6EBE0 /* blueprint-25.png in Resources */,
+				37F4323B1EE8A4FA00E6EBE0 /* microphone-25.png in Resources */,
+				37F432391EE8A3B200E6EBE0 /* id-card-25.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
