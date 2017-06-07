@@ -14,6 +14,7 @@
 		37F432181EE82B9000E6EBE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F432161EE82B9000E6EBE0 /* LaunchScreen.storyboard */; };
 		37F432201EE82D0100E6EBE0 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4321F1EE82D0100E6EBE0 /* RangeSlider.swift */; };
 		37F432221EE8354100E6EBE0 /* RangeSliderThumbLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F432211EE8354100E6EBE0 /* RangeSliderThumbLayer.swift */; };
+		37F432241EE83FF300E6EBE0 /* RangeSliderTrackLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F432231EE83FF300E6EBE0 /* RangeSliderTrackLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		37F432191EE82B9000E6EBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37F4321F1EE82D0100E6EBE0 /* RangeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
 		37F432211EE8354100E6EBE0 /* RangeSliderThumbLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSliderThumbLayer.swift; sourceTree = "<group>"; };
+		37F432231EE83FF300E6EBE0 /* RangeSliderTrackLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSliderTrackLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				37F4320F1EE82B9000E6EBE0 /* ViewController.swift */,
 				37F4321F1EE82D0100E6EBE0 /* RangeSlider.swift */,
 				37F432211EE8354100E6EBE0 /* RangeSliderThumbLayer.swift */,
+				37F432231EE83FF300E6EBE0 /* RangeSliderTrackLayer.swift */,
 				37F432111EE82B9000E6EBE0 /* Main.storyboard */,
 				37F432141EE82B9000E6EBE0 /* Assets.xcassets */,
 				37F432161EE82B9000E6EBE0 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F432101EE82B9000E6EBE0 /* ViewController.swift in Sources */,
+				37F432241EE83FF300E6EBE0 /* RangeSliderTrackLayer.swift in Sources */,
 				37F432201EE82D0100E6EBE0 /* RangeSlider.swift in Sources */,
 				37F4320E1EE82B9000E6EBE0 /* AppDelegate.swift in Sources */,
 				37F432221EE8354100E6EBE0 /* RangeSliderThumbLayer.swift in Sources */,
