@@ -97,7 +97,6 @@ class RangeSlider: UIControl {
         }
     }
     
-    
     let trackLayer = RangeSliderTrackLayer()
     let lowerThumbLayer = RangeSliderThumbLayer()
     let upperThumbLayer = RangeSliderThumbLayer()
@@ -116,7 +115,16 @@ class RangeSlider: UIControl {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        setupViews()
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        setupViews()
+    }
+    
+    
+    func setupViews() {
         trackLayer.rangeSlider = self
         trackLayer.contentsScale = UIScreen.main.scale
         layer.addSublayer(trackLayer)
@@ -135,7 +143,6 @@ class RangeSlider: UIControl {
         
         updateLayerFrames()
     }
-    
     
     func updateLayerFrames() {
         CATransaction.begin()

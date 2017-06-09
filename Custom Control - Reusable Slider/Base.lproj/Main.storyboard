@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,11 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvz-FT-7Ry" customClass="RangeSlider" customModule="Custom_Control___Reusable_Slider" customModuleProvider="target">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="diF-5n-iVe"/>
-                                    <constraint firstAttribute="height" constant="128" id="uuu-pk-fIx"/>
+                                    <constraint firstAttribute="height" constant="30" id="0FE-Ik-FoN"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
@@ -42,7 +42,7 @@
                                         <color key="value" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="trackHighlightTinColor">
-                                        <color key="value" red="1" green="0.19965409889999999" blue="0.60516582630000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="upperValue">
                                         <real key="value" value="0.69999999999999996"/>
@@ -56,8 +56,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mvz-FT-7Ry" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OAC-lD-kaf"/>
-                            <constraint firstItem="mvz-FT-7Ry" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gK3-p9-cZT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mvz-FT-7Ry" secondAttribute="trailing" id="8KE-dV-3gg"/>
+                            <constraint firstItem="mvz-FT-7Ry" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="9d2-15-mmC"/>
+                            <constraint firstItem="mvz-FT-7Ry" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TW9-fb-t6S"/>
+                            <constraint firstItem="mvz-FT-7Ry" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ez1-4V-KDz"/>
                         </constraints>
                     </view>
                     <connections>
@@ -66,6 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="34.632683658170919"/>
         </scene>
     </scenes>
     <resources>

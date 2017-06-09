@@ -9,6 +9,7 @@
 import UIKit
 import QuartzCore
 
+
 class RangeSliderTrackLayer: CALayer {
     weak var rangeSlider: RangeSlider?
     

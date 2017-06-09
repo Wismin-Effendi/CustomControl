@@ -9,6 +9,7 @@
 import UIKit
 import QuartzCore
 
+
 class RangeSliderThumbLayer: CALayer {
     
     var normalThumbImage: UIImage?
