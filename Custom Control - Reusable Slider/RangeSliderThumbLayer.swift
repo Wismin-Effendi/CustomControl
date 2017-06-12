@@ -28,7 +28,7 @@ class RangeSliderThumbLayer: CALayer {
         // Show Icon
         if let normalImage = normalThumbImage {
             ctx.setFillColor(UIColor.yellow.cgColor)
-            ctx.draw(normalImage.cgImage!, in: self.bounds)
+            ctx.draw(flip(normalImage.cgImage!), in: self.bounds)
         }
 
         
@@ -36,18 +36,18 @@ class RangeSliderThumbLayer: CALayer {
             if let highlightImage = highlightThumbImage {
                 ctx.clear(self.bounds)
                 ctx.setFillColor(UIColor.red.cgColor)
-                ctx.draw(highlightImage.cgImage!, in: self.bounds)
+                ctx.draw(flip(highlightImage.cgImage!), in: self.bounds)
             }
         }
     }
     
-    func maskImage(originalImage: UIImage, toPath path: UIBezierPath) -> UIImage? {
-        UIGraphicsBeginImageContext(originalImage.size)
-        path.addClip()
-        originalImage.draw(at: CGPoint.zero)
-        let maskedImage = UIGraphicsGetImageFromCurrentImageContext()
+    func flip(_ im: CGImage) -> CGImage {
+        let sz = CGSize(width: CGFloat(im.width), height: CGFloat(im.height))
+        UIGraphicsBeginImageContextWithOptions(sz, false, 0)
+        UIGraphicsGetCurrentContext()?.draw(im, in: CGRect(x: 0, y: 0, width: sz.width, height: sz.height))
+        let result = UIGraphicsGetImageFromCurrentImageContext()?.cgImage
         UIGraphicsEndImageContext()
-        return maskedImage
+        return result!
     }
     
 }
